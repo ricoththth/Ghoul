@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Tienda</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a href="tienda.html" class="active">Tienda</a></li>
+      <li><a href="lookbook.html">Lookbook</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="archivo.html">Archivo</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div class="nav__actions">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count">1</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- Page header -->
+    <div class="shop-header">
+      <h1 class="shop-header__title">TIENDA</h1>
+      <p class="shop-header__sub">Drop 003 — Colección Nocturno</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="todo">Todo</button>
+      <button class="filter-btn" data-cat="camisetas">Camisetas</button>
+      <button class="filter-btn" data-cat="camibuzos">Camibuzos</button>
+      <button class="filter-btn" data-cat="tote-bags">Tote Bags</button>
+      <button class="filter-btn" data-cat="bufandas">Bufandas</button>
+      <button class="filter-btn" data-cat="accesorios">Accesorios</button>
+      <div class="filter-bar__sort">
+        <select class="filter-sort">
+          <option>Ordenar por: Novedad</option>
+          <option>Precio: menor a mayor</option>
+          <option>Precio: mayor a menor</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product grid -->
+    <div class="product-grid">
+
+      <a href="producto.html" class="product-card" data-cat="camisetas">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-001</p>
+          <p class="product-card__name">Camiseta Nocturno</p>
+          <p class="product-card__price">$89.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="camibuzos">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-002</p>
+          <p class="product-card__name">Hoodie Oversize</p>
+          <p class="product-card__price">$189.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="tote-bags">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-003</p>
+          <p class="product-card__name">Tote Bag Drop 002</p>
+          <p class="product-card__price">$65.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="bufandas">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-004</p>
+          <p class="product-card__name">Bufanda Tejida</p>
+          <p class="product-card__price">$79.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="camisetas">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-005</p>
+          <p class="product-card__name">Camiseta Fantasma</p>
+          <p class="product-card__price">$89.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="accesorios">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-006</p>
+          <p class="product-card__name">Pin Calavera Ghoul</p>
+          <p class="product-card__price">$25.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="camibuzos">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-007</p>
+          <p class="product-card__name">Camibuzo Urban</p>
+          <p class="product-card__price">$145.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="accesorios">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-008</p>
+          <p class="product-card__name">Gorra Snapback</p>
+          <p class="product-card__price">$59.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="camisetas">
+        <div class="product-card__img ph"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-009</p>
+          <p class="product-card__name">Camiseta Void</p>
+          <p class="product-card__price">$89.000 COP</p>
+        </div>
+      </a>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <h3>GHOUL</h3>
+      <p>Marca de ropa colombiana.<br>Drops limitados, estética underground.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Tienda</h4>
+      <ul>
+        <li><a href="tienda.html">Camisetas</a></li>
+        <li><a href="tienda.html">Camibuzos</a></li>
+        <li><a href="tienda.html">Tote Bags</a></li>
+        <li><a href="tienda.html">Accesorios</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="archivo.html">Archivo</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Política de envíos</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Términos</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="footer__bottom">
+    <p>© 2025 GHOUL. Todos los derechos reservados.</p>
+    <p>Bogotá, Colombia — ghoul.com.co</p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

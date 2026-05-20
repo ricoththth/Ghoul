@@ -1,0 +1,103 @@
+/* ============================================
+   TIENDA — Yeezy-style minimal grid
+   ============================================ */
+
+.shop-header {
+  padding: 60px var(--gutter) 40px;
+  border-bottom: 1px solid var(--gray-sep);
+}
+.shop-header__title {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.shop-header__sub {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+  height: 52px;
+  border-bottom: 1px solid var(--gray-sep);
+  gap: 32px;
+}
+.filter-btn {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  padding: 0;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  padding-bottom: 2px;
+}
+.filter-btn:hover { color: var(--dark); }
+.filter-btn.active { color: var(--dark); border-bottom-color: var(--dark); }
+.filter-bar__sort { margin-left: auto; }
+.filter-sort {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Product grid — no card boxes, floating */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 0 var(--gutter);
+  padding-top: 48px;
+  padding-bottom: 80px;
+  row-gap: 56px;
+  column-gap: 32px;
+}
+.product-card { display: block; }
+.product-card__img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--ph);
+  margin-bottom: 20px;
+  transition: opacity 0.3s;
+}
+.product-card:hover .product-card__img { opacity: 0.88; }
+.product-card__info {}
+.product-card__sku {
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.product-card__name {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+.product-card__price {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+}

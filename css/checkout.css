@@ -1,0 +1,211 @@
+/* ============================================
+   CHECKOUT — finalizar compra
+   ============================================ */
+
+.checkout-page { min-height: 100vh; }
+
+/* Breadcrumb */
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px var(--gutter);
+  border-bottom: 1px solid var(--gray-sep);
+}
+.checkout-step {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.checkout-step--done { color: var(--gray-mid); text-decoration: underline; text-underline-offset: 3px; }
+.checkout-step--active { color: var(--dark); font-weight: 600; }
+.checkout-step--inactive { color: var(--gray-lt); }
+.checkout-step__arrow { color: var(--gray-lt); font-size: 14px; }
+
+/* Layout — same 2-col as carrito */
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px var(--gutter);
+  gap: 64px;
+}
+
+/* Review block (address summary) */
+.co-review-block {
+  border: 1px solid var(--gray-inp);
+  margin-bottom: 32px;
+}
+.co-review-block__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--gray-sep);
+}
+.co-review-block__row:last-child { border-bottom: none; }
+.co-review-block__key {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  min-width: 80px;
+}
+.co-review-block__val {
+  font-size: 13px;
+  color: var(--dark);
+  flex: 1;
+}
+.co-review-block__edit {
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  flex-shrink: 0;
+}
+
+/* Shipping options */
+.shipping-options { display: flex; flex-direction: column; gap: 8px; }
+.shipping-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--gray-inp);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.shipping-option--selected { border-color: var(--dark); }
+.shipping-option input[type="radio"] { accent-color: var(--dark); flex-shrink: 0; }
+.shipping-option__info { display: flex; justify-content: space-between; flex: 1; align-items: center; }
+.shipping-option__name { font-size: 13px; color: var(--dark); }
+.shipping-option__price {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* Form section sub */
+.form-section__sub {
+  font-size: 12px;
+  color: var(--gray-mid);
+  margin-bottom: 16px;
+  margin-top: -8px;
+}
+
+/* Payment tabs */
+.pay-tabs {
+  display: flex;
+  border: 1px solid var(--gray-inp);
+  margin-bottom: 16px;
+}
+.pay-tab {
+  flex: 1;
+  height: 44px;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  border-right: 1px solid var(--gray-inp);
+  background: var(--white);
+  transition: all 0.2s;
+}
+.pay-tab:last-child { border-right: none; }
+.pay-tab--active { background: var(--dark); color: var(--white); }
+.pay-tab:hover:not(.pay-tab--active) { background: var(--ph); }
+
+/* Card form */
+.card-form {}
+.form-group { margin-bottom: 12px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Checkbox */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--dark);
+  margin-top: 12px;
+  cursor: pointer;
+}
+.checkbox-label input { accent-color: var(--red); width: 16px; height: 16px; }
+
+/* Pay button */
+.co-pay-btn {
+  margin-top: 28px;
+  font-size: 13px;
+  height: 56px;
+}
+.co-ssl {
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--gray-mid);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Right column — reuse cart-summary styles from carrito.css */
+.cart-summary {
+  padding: 32px 0 32px 40px;
+  border-left: 1px solid var(--gray-sep);
+}
+.cart-summary__title {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.summary-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
+.summary-item__img { width: 72px; height: 90px; background: var(--ph); flex-shrink: 0; }
+.summary-item__info { flex: 1; }
+.summary-item__name { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.summary-item__meta { font-family: var(--font-head); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-mid); }
+.summary-item__price { font-family: var(--font-head); font-size: 13px; font-weight: 600; flex-shrink: 0; }
+.summary-sep { height: 1px; background: var(--gray-sep); margin: 16px 0; }
+.summary-totals { display: flex; flex-direction: column; gap: 10px; }
+.summary-line { display: flex; justify-content: space-between; font-size: 13px; color: var(--dark); }
+.summary-total { display: flex; justify-content: space-between; font-family: var(--font-head); font-size: 15px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.summary-ssl { font-family: var(--font-head); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-mid); margin-top: 16px; text-align: center; }
+
+/* Applied code */
+.co-applied-code { padding: 12px 0; }
+.co-applied-code__label {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  margin-bottom: 8px;
+}
+.co-applied-code__row { display: flex; justify-content: space-between; align-items: center; }
+.co-applied-code__code {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--dark);
+  background: var(--ph);
+  padding: 4px 10px;
+}
+.co-applied-code__discount {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--red);
+}

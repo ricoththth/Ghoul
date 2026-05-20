@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Finalizar compra</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="carrito.html" style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--dark)">← Volver</a>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">FINALIZAR COMPRA</div>
+  </nav>
+
+  <main class="page checkout-page">
+
+    <!-- Breadcrumb -->
+    <div class="checkout-steps">
+      <span class="checkout-step checkout-step--done">Carrito</span>
+      <span class="checkout-step__arrow">›</span>
+      <span class="checkout-step checkout-step--active">Pago</span>
+      <span class="checkout-step__arrow">›</span>
+      <span class="checkout-step checkout-step--inactive">Confirmación</span>
+    </div>
+
+    <div class="checkout-layout">
+
+      <!-- LEFT: Payment -->
+      <div class="checkout-form">
+
+        <!-- Resumen dirección -->
+        <div class="co-review-block">
+          <div class="co-review-block__row">
+            <span class="co-review-block__key">Contacto</span>
+            <span class="co-review-block__val">usuario@correo.com</span>
+            <a href="carrito.html" class="co-review-block__edit">Editar</a>
+          </div>
+          <div class="co-review-block__row">
+            <span class="co-review-block__key">Enviar a</span>
+            <span class="co-review-block__val">Calle 72 #10-34, Bogotá, Colombia</span>
+            <a href="carrito.html" class="co-review-block__edit">Editar</a>
+          </div>
+        </div>
+
+        <!-- Método de envío -->
+        <div class="form-section">
+          <h3 class="form-section__title">Método de envío</h3>
+          <div class="shipping-options">
+            <label class="shipping-option shipping-option--selected">
+              <input type="radio" name="shipping" checked>
+              <div class="shipping-option__info">
+                <span class="shipping-option__name">Envío estándar (3-5 días hábiles)</span>
+                <span class="shipping-option__price">$8.000 COP</span>
+              </div>
+            </label>
+            <label class="shipping-option">
+              <input type="radio" name="shipping">
+              <div class="shipping-option__info">
+                <span class="shipping-option__name">Envío express (1-2 días hábiles)</span>
+                <span class="shipping-option__price">$18.000 COP</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Método de pago -->
+        <div class="form-section">
+          <h3 class="form-section__title">Método de pago</h3>
+          <p class="form-section__sub">Todas las transacciones son seguras y encriptadas.</p>
+
+          <!-- Payment tabs -->
+          <div class="pay-tabs">
+            <button class="pay-tab pay-tab--active">Tarjeta de crédito / débito</button>
+            <button class="pay-tab">PSE</button>
+            <button class="pay-tab">Nequi</button>
+          </div>
+
+          <!-- Card form -->
+          <div class="card-form">
+            <div class="form-group">
+              <label class="input-label">Número de tarjeta</label>
+              <input type="text" class="input" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="form-group">
+              <label class="input-label">Nombre en la tarjeta</label>
+              <input type="text" class="input" placeholder="Como aparece en la tarjeta">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="input-label">Fecha de vencimiento</label>
+                <input type="text" class="input" placeholder="MM / AA">
+              </div>
+              <div class="form-group">
+                <label class="input-label">CVV</label>
+                <input type="text" class="input" placeholder="•••">
+              </div>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox"> Guardar tarjeta para próximas compras
+            </label>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <button class="btn btn--red btn--full co-pay-btn">
+          Pagar — $197.000 COP
+        </button>
+        <p class="co-ssl">🔒 Pago seguro con cifrado SSL de 256 bits</p>
+
+      </div>
+
+      <!-- RIGHT: Order summary -->
+      <div class="cart-summary">
+        <h3 class="cart-summary__title">Tu pedido</h3>
+
+        <div class="summary-item">
+          <div class="summary-item__img ph"></div>
+          <div class="summary-item__info">
+            <p class="summary-item__name">Hoodie Oversize</p>
+            <p class="summary-item__meta">HD-01 · Talla: M · Cant: 1</p>
+          </div>
+          <p class="summary-item__price">$189.000 COP</p>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <div class="summary-totals">
+          <div class="summary-line"><span>Subtotal</span><span>$189.000 COP</span></div>
+          <div class="summary-line"><span>Envío estándar</span><span>$8.000 COP</span></div>
+          <div class="summary-line"><span>Impuestos</span><span>$0.00</span></div>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <div class="summary-total">
+          <span>Total</span>
+          <span>$197.000 COP</span>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <!-- Applied discount placeholder -->
+        <div class="co-applied-code">
+          <p class="co-applied-code__label">Código aplicado</p>
+          <div class="co-applied-code__row">
+            <span class="co-applied-code__code">GHOUL10</span>
+            <span class="co-applied-code__discount">−$18.900 COP</span>
+          </div>
+        </div>
+
+        <p class="summary-ssl">Pago 100% seguro — SSL protegido</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Payment tab switching
+    document.querySelectorAll('.pay-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('pay-tab--active'));
+        tab.classList.add('pay-tab--active');
+      });
+    });
+  </script>
+</body>
+</html>

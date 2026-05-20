@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Carrito</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="tienda.html" class="nav-back" style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--dark)">← GHOUL</a>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">CARRITO &nbsp; 1 ▪</div>
+  </nav>
+
+  <main class="page cart-page">
+
+    <div class="cart-layout">
+
+      <!-- LEFT: Express checkout + form -->
+      <div class="cart-form">
+
+        <!-- Express checkout -->
+        <div class="express-checkout">
+          <p class="express-checkout__label">Express checkout</p>
+          <div class="express-checkout__btns">
+            <button class="express-btn">PSE</button>
+            <button class="express-btn">NEQUI</button>
+            <button class="express-btn">PAYU</button>
+          </div>
+          <div class="express-checkout__divider">
+            <span class="express-checkout__or">o continuar</span>
+          </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="form-section">
+          <h3 class="form-section__title">Información de contacto</h3>
+          <input type="email" class="input" placeholder="Correo electrónico">
+          <label class="checkbox-label">
+            <input type="checkbox" checked> Suscribirme a actualizaciones y notificaciones
+          </label>
+        </div>
+
+        <!-- Shipping address -->
+        <div class="form-section">
+          <h3 class="form-section__title">Dirección de envío</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="input-label">Nombre</label>
+              <input type="text" class="input">
+            </div>
+            <div class="form-group">
+              <label class="input-label">Apellido</label>
+              <input type="text" class="input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="input-label">Dirección</label>
+            <input type="text" class="input" placeholder="Empieza a escribir tu dirección...">
+          </div>
+          <div class="form-group">
+            <label class="input-label">Apartamento, suite, etc. (opcional)</label>
+            <input type="text" class="input">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="input-label">Ciudad</label>
+              <input type="text" class="input">
+            </div>
+            <div class="form-group">
+              <label class="input-label">País</label>
+              <input type="text" class="input" value="Colombia">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="input-label">Departamento</label>
+              <input type="text" class="input">
+            </div>
+            <div class="form-group">
+              <label class="input-label">Código postal</label>
+              <input type="text" class="input">
+            </div>
+          </div>
+        </div>
+
+        <a href="checkout.html" class="btn btn--dark btn--full cart-continue">Continuar al pago</a>
+
+      </div>
+
+      <!-- RIGHT: Order summary -->
+      <div class="cart-summary">
+        <h3 class="cart-summary__title">Resumen del pedido</h3>
+
+        <!-- Item -->
+        <div class="summary-item">
+          <div class="summary-item__img ph"></div>
+          <div class="summary-item__info">
+            <p class="summary-item__name">Hoodie Oversize</p>
+            <p class="summary-item__meta">HD-01 · Talla: M</p>
+            <div class="qty-row">
+              <button class="qty-btn" data-dir="dn">−</button>
+              <input type="number" class="qty-input" value="1" min="1" max="99">
+              <button class="qty-btn" data-dir="up">+</button>
+            </div>
+          </div>
+          <p class="summary-item__price">$189.000 COP</p>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <!-- Totals -->
+        <div class="summary-totals">
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span>$189.000 COP</span>
+          </div>
+          <div class="summary-line">
+            <span>Envío</span>
+            <span class="summary-line--muted">Siguiente paso</span>
+          </div>
+          <div class="summary-line">
+            <span>Impuestos</span>
+            <span>$0.00</span>
+          </div>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <div class="summary-total">
+          <span>Total</span>
+          <span>$189.000 COP</span>
+        </div>
+
+        <div class="summary-sep"></div>
+
+        <!-- Discount code -->
+        <div class="discount-row">
+          <p class="discount-row__label">Código Ghoul</p>
+          <div class="discount-row__input">
+            <input type="text" class="input" placeholder="Ingresa tu código">
+            <button class="btn btn--dark">Aplicar</button>
+          </div>
+        </div>
+
+        <p class="summary-ssl">Pago 100% seguro — SSL protegido</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

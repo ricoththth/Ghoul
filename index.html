@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="lookbook.html">Lookbook</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="archivo.html">Archivo</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div class="nav__actions">
+      <!-- Search icon -->
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <!-- Bag icon -->
+      <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count">1</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg ph"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">DROP 003 — SEPTIEMBRE 2025</p>
+        <h1 class="hero__title">NOCTURNO</h1>
+        <p class="hero__sub">Una colección que nace de la oscuridad.<br>Diseñada para los que no duermen.</p>
+        <a href="tienda.html" class="btn btn--dark hero__cta">Ver colección</a>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="cd-section">
+      <p class="cd-label">Próximo drop en</p>
+      <div class="countdown">
+        <div class="cd-unit">
+          <span class="cd-value">00</span>
+          <span class="cd-unit-label">Días</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-value">00</span>
+          <span class="cd-unit-label">Horas</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-value">00</span>
+          <span class="cd-unit-label">Min</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-value">00</span>
+          <span class="cd-unit-label">Seg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID — últimas piezas -->
+    <section class="home-grid">
+      <div class="home-grid__header">
+        <h2 class="home-grid__title">ÚLTIMAS PIEZAS</h2>
+        <a href="tienda.html" class="home-grid__link">Ver todo →</a>
+      </div>
+      <div class="home-grid__items">
+        <a href="producto.html" class="hg-card">
+          <div class="hg-card__img ph"></div>
+          <p class="hg-card__sku">GH-001</p>
+          <p class="hg-card__name">Camiseta Nocturno</p>
+          <p class="hg-card__price">$89.000 COP</p>
+        </a>
+        <a href="producto.html" class="hg-card">
+          <div class="hg-card__img ph"></div>
+          <p class="hg-card__sku">GH-002</p>
+          <p class="hg-card__name">Hoodie Oversize</p>
+          <p class="hg-card__price">$189.000 COP</p>
+        </a>
+        <a href="producto.html" class="hg-card">
+          <div class="hg-card__img ph"></div>
+          <p class="hg-card__sku">GH-003</p>
+          <p class="hg-card__name">Tote Bag Drop 002</p>
+          <p class="hg-card__price">$65.000 COP</p>
+        </a>
+        <a href="producto.html" class="hg-card">
+          <div class="hg-card__img ph"></div>
+          <p class="hg-card__sku">GH-004</p>
+          <p class="hg-card__name">Bufanda Tejida</p>
+          <p class="hg-card__price">$79.000 COP</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK SPLIT -->
+    <section class="lb-split">
+      <div class="lb-split__img ph"></div>
+      <div class="lb-split__text">
+        <p class="lb-split__eyebrow">Lookbook — Drop 002</p>
+        <h2 class="lb-split__title">UNDERGROUND</h2>
+        <p class="lb-split__body">Fotografiado en las calles de Bogotá.<br>Gris, concreto, silencio y movimiento.</p>
+        <a href="lookbook.html" class="btn btn--outline lb-split__btn">Ver lookbook</a>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="blog-prev">
+      <div class="blog-prev__header">
+        <h2 class="blog-prev__title">HISTORIA GHOUL</h2>
+        <a href="blog.html" class="blog-prev__link">Ver blog →</a>
+      </div>
+      <div class="blog-prev__items">
+        <a href="blog.html" class="bp-card">
+          <div class="bp-card__img ph"></div>
+          <p class="bp-card__date">12 AGO 2025</p>
+          <h3 class="bp-card__title">El origen del nombre: por qué GHOUL</h3>
+          <p class="bp-card__excerpt">Una conversación, una servilleta, una ciudad que no duerme.</p>
+        </a>
+        <a href="blog.html" class="bp-card">
+          <div class="bp-card__img ph"></div>
+          <p class="bp-card__date">03 JUL 2025</p>
+          <h3 class="bp-card__title">Drop 001 — cómo nació la primera colección</h3>
+          <p class="bp-card__excerpt">Producción artesanal, 30 unidades, agotado en 4 horas.</p>
+        </a>
+        <a href="blog.html" class="bp-card">
+          <div class="bp-card__img ph"></div>
+          <p class="bp-card__date">15 JUN 2025</p>
+          <h3 class="bp-card__title">Diseñar para quienes no encajan</h3>
+          <p class="bp-card__excerpt">Manifiesto de la marca: ropa para los que viven de noche.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <p class="newsletter__eyebrow">Drops exclusivos</p>
+      <h2 class="newsletter__title">SÉ EL PRIMERO EN SABER</h2>
+      <p class="newsletter__sub">Acceso anticipado a drops, contenido exclusivo y descuentos para la comunidad.</p>
+      <form class="newsletter__form">
+        <input type="email" class="input newsletter__input" placeholder="tu@correo.com">
+        <button type="submit" class="btn btn--dark">Suscribirse</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <h3>GHOUL</h3>
+      <p>Marca de ropa colombiana.<br>Drops limitados, estética underground.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Tienda</h4>
+      <ul>
+        <li><a href="tienda.html">Camisetas</a></li>
+        <li><a href="tienda.html">Camibuzos</a></li>
+        <li><a href="tienda.html">Tote Bags</a></li>
+        <li><a href="tienda.html">Accesorios</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="archivo.html">Archivo</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Política de envíos</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="footer__bottom">
+    <p>© 2025 GHOUL. Todos los derechos reservados.</p>
+    <p>Bogotá, Colombia — ghoul.com.co</p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

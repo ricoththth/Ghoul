@@ -1,0 +1,95 @@
+/* ============================================
+   LOOKBOOK — bento asimétrico
+   ============================================ */
+
+.lb-page-header {
+  padding: 72px var(--gutter) 48px;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-sep);
+}
+.lb-page-header__drop {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+.lb-page-header__title {
+  font-family: var(--font-head);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin-bottom: 16px;
+}
+.lb-page-header__location {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+}
+
+/* Bento */
+.lb-bento {
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 4px;
+}
+.lb-bento__row {
+  display: flex;
+  gap: 4px;
+}
+
+/* Row 1: tall left + 2 stacked right */
+.lb-bento__row--1 { height: 600px; }
+.lb-bento__row--1 .lb-img--tall { flex: 0 0 55%; }
+.lb-bento__col { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.lb-bento__col .lb-img { flex: 1; }
+
+/* Quote */
+.lb-quote {
+  padding: 64px var(--gutter);
+  text-align: center;
+}
+.lb-quote blockquote {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--dark);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Row 2: narrow + wide + narrow */
+.lb-bento__row--2 { height: 480px; }
+.lb-img--narrow { flex: 0 0 24%; }
+.lb-img--wide   { flex: 1; }
+
+/* Row 3: panorama + square */
+.lb-bento__row--3 { height: 360px; }
+.lb-img--panorama { flex: 1; }
+.lb-img--sq { flex: 0 0 360px; }
+
+/* Row 4: four equal */
+.lb-bento__row--4 { height: 400px; }
+.lb-bento__row--4 .lb-img { flex: 1; }
+
+/* Images */
+.lb-img {
+  background: var(--ph);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Archive link */
+.lb-archive-link {
+  padding: 64px var(--gutter);
+  text-align: center;
+}

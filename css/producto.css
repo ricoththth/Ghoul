@@ -1,0 +1,200 @@
+/* ============================================
+   DETALLE PRODUCTO — Yeezy full-viewport
+   ============================================ */
+
+.nav--product {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: var(--cream);
+  border-bottom: 1px solid var(--gray-sep);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--gutter);
+}
+.nav-back {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dark);
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--red); }
+
+.pd-page { overflow: hidden; }
+
+.pd-layout {
+  display: grid;
+  grid-template-columns: 72px 1fr 440px;
+  min-height: calc(100vh - var(--nav-h));
+}
+
+/* Thumbnail strip */
+.pd-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 16px;
+  background: var(--cream);
+  border-right: 1px solid var(--gray-sep);
+}
+.thumb-item {
+  width: 40px;
+  height: 52px;
+  background: var(--ph);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+  flex-shrink: 0;
+}
+.thumb-item.active { border-color: var(--dark); }
+.thumb-item:hover { border-color: var(--gray-mid); }
+
+/* Main image */
+.pd-main-img {
+  background: var(--ph);
+  position: relative;
+  overflow: hidden;
+}
+.pd-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-head);
+  font-size: 18px;
+  color: var(--white);
+  background: rgba(0,0,0,0.25);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.pd-arrow:hover { background: rgba(0,0,0,0.5); }
+.pd-arrow--prev { left: 20px; }
+.pd-arrow--next { right: 20px; }
+
+/* Info panel */
+.pd-info {
+  padding: 48px 48px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--gray-sep);
+  overflow-y: auto;
+}
+.pd-sku {
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  margin-bottom: 8px;
+}
+.pd-name {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+.pd-price {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.pd-divider {
+  height: 1px;
+  background: var(--gray-sep);
+  margin: 24px 0;
+}
+
+/* Size selector */
+.pd-size__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.pd-size__label {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+}
+.pd-size__guide {
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.size-grid {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.size-btn {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  width: 52px;
+  height: 44px;
+  border: 1px solid var(--gray-inp);
+  color: var(--dark);
+  background: var(--white);
+  transition: all 0.2s;
+}
+.size-btn:hover { border-color: var(--dark); }
+.size-btn.active { background: var(--dark); color: var(--white); border-color: var(--dark); }
+
+/* Add to cart */
+.pd-atc { margin-bottom: 0; }
+
+/* Description */
+.pd-desc__text {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--gray-mid);
+}
+
+/* Details */
+.pd-details { margin-top: 20px; }
+.pd-details__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-sep);
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.pd-details__row span:first-child { color: var(--gray-mid); }
+.pd-stock { color: var(--red); }
+
+/* Dots */
+.pd-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 28px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gray-inp);
+}
+.dot--active { background: var(--dark); }

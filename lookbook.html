@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Lookbook</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lookbook.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="lookbook.html" class="active">Lookbook</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="archivo.html">Archivo</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div class="nav__actions">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count">1</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <div class="lb-page-header">
+      <p class="lb-page-header__drop">Drop 003</p>
+      <h1 class="lb-page-header__title">NOCTURNO</h1>
+      <p class="lb-page-header__location">Bogotá, Colombia — Agosto 2025</p>
+    </div>
+
+    <!-- Bento grid asimétrico -->
+    <div class="lb-bento">
+
+      <!-- Fila 1: grande + dos pequeñas -->
+      <div class="lb-bento__row lb-bento__row--1">
+        <div class="lb-img lb-img--tall ph"></div>
+        <div class="lb-bento__col">
+          <div class="lb-img ph"></div>
+          <div class="lb-img ph"></div>
+        </div>
+      </div>
+
+      <!-- Cita editorial -->
+      <div class="lb-quote">
+        <blockquote>"Ropa para los que viven cuando el resto duerme."</blockquote>
+      </div>
+
+      <!-- Fila 2: tres columnas desiguales -->
+      <div class="lb-bento__row lb-bento__row--2">
+        <div class="lb-img lb-img--narrow ph"></div>
+        <div class="lb-img lb-img--wide ph"></div>
+        <div class="lb-img lb-img--narrow ph"></div>
+      </div>
+
+      <!-- Fila 3: wide + cuadrado -->
+      <div class="lb-bento__row lb-bento__row--3">
+        <div class="lb-img lb-img--panorama ph"></div>
+        <div class="lb-img lb-img--sq ph"></div>
+      </div>
+
+      <!-- Fila 4: cuatro piezas iguales -->
+      <div class="lb-bento__row lb-bento__row--4">
+        <div class="lb-img ph"></div>
+        <div class="lb-img ph"></div>
+        <div class="lb-img ph"></div>
+        <div class="lb-img ph"></div>
+      </div>
+
+    </div>
+
+    <!-- Drops anteriores link -->
+    <div class="lb-archive-link">
+      <a href="archivo.html" class="btn btn--outline">Ver drops anteriores</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand"><h3>GHOUL</h3><p>Marca de ropa colombiana.<br>Drops limitados, estética underground.</p></div>
+    <div class="footer__col"><h4>Tienda</h4><ul><li><a href="tienda.html">Camisetas</a></li><li><a href="tienda.html">Camibuzos</a></li><li><a href="tienda.html">Tote Bags</a></li></ul></div>
+    <div class="footer__col"><h4>Info</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="lookbook.html">Lookbook</a></li><li><a href="archivo.html">Archivo</a></li></ul></div>
+    <div class="footer__col"><h4>Legal</h4><ul><li><a href="#">Política de envíos</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+  </footer>
+  <div class="footer__bottom">
+    <p>© 2025 GHOUL.</p>
+    <p>ghoul.com.co</p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

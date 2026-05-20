@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Hoodie Oversize</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+
+  <nav class="nav nav--product">
+    <a href="tienda.html" class="nav-back">← GHOUL</a>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="nav__cart-count">1</span>
+    </a>
+  </nav>
+
+  <main class="page pd-page">
+
+    <div class="pd-layout">
+
+      <!-- Thumbnail strip (left) -->
+      <div class="pd-thumbs">
+        <div class="thumb-item active ph"></div>
+        <div class="thumb-item ph"></div>
+        <div class="thumb-item ph"></div>
+        <div class="thumb-item ph"></div>
+        <div class="thumb-item ph"></div>
+      </div>
+
+      <!-- Main image -->
+      <div class="pd-main-img ph">
+        <button class="pd-arrow pd-arrow--prev">←</button>
+        <button class="pd-arrow pd-arrow--next">→</button>
+      </div>
+
+      <!-- Product info (right) -->
+      <div class="pd-info">
+        <p class="pd-sku">HD-01</p>
+        <h1 class="pd-name">Hoodie Oversize</h1>
+        <p class="pd-price">$189.000 COP</p>
+
+        <div class="pd-divider"></div>
+
+        <!-- Size selector -->
+        <div class="pd-size">
+          <div class="pd-size__header">
+            <span class="pd-size__label">Talla</span>
+            <a href="#" class="pd-size__guide">Guía de tallas</a>
+          </div>
+          <div class="size-grid">
+            <button class="size-btn">XS</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn active">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+
+        <!-- Add to cart -->
+        <button class="btn btn--dark btn--full pd-atc">Agregar al carrito</button>
+
+        <div class="pd-divider"></div>
+
+        <!-- Description -->
+        <div class="pd-desc">
+          <p class="pd-desc__text">Hoodie oversize con fit estructurado. 100% algodón peinado 320g. Bordado GHOUL en pecho izquierdo. Edición limitada Drop 003 — 40 unidades.</p>
+        </div>
+
+        <div class="pd-details">
+          <div class="pd-details__row">
+            <span>Material</span>
+            <span>100% Algodón 320g</span>
+          </div>
+          <div class="pd-details__row">
+            <span>Fit</span>
+            <span>Oversize</span>
+          </div>
+          <div class="pd-details__row">
+            <span>Drop</span>
+            <span>003 — Nocturno</span>
+          </div>
+          <div class="pd-details__row">
+            <span>Disponibles</span>
+            <span class="pd-stock">8 unidades</span>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="pd-dots">
+          <span class="dot dot--active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

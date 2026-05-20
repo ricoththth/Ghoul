@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOUL — Archivo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/archivo.css">
+</head>
+<body class="body--dark">
+
+  <nav class="nav nav--dark">
+    <ul class="nav__links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="lookbook.html">Lookbook</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="archivo.html" class="active">Archivo</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">GHOUL</a>
+    <div class="nav__actions">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count">1</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="page archivo-page">
+
+    <div class="archivo-header">
+      <p class="archivo-header__label">Historial de drops</p>
+      <h1 class="archivo-header__title">ARCHIVO</h1>
+    </div>
+
+    <!-- Drop 002 -->
+    <div class="drop-entry">
+      <div class="drop-entry__ghost">002</div>
+      <div class="drop-entry__content">
+        <div class="drop-entry__top">
+          <div>
+            <p class="drop-entry__label">DROP 002</p>
+            <h2 class="drop-entry__name">UNDERGROUND</h2>
+          </div>
+          <div class="drop-entry__meta">
+            <p class="drop-entry__date">MARZO 2025</p>
+            <p class="drop-entry__units">30 unidades — AGOTADO</p>
+          </div>
+        </div>
+        <div class="drop-entry__imgs">
+          <div class="ph drop-img"></div>
+          <div class="ph drop-img"></div>
+          <div class="ph drop-img"></div>
+          <div class="ph drop-img drop-img--wide"></div>
+        </div>
+        <div class="drop-entry__pieces">
+          <p class="drop-pieces__label">Piezas del drop</p>
+          <div class="drop-pieces__list">
+            <span class="drop-piece">Camiseta Sombra</span>
+            <span class="drop-piece">Hoodie Underground</span>
+            <span class="drop-piece">Tote Bag #02</span>
+            <span class="drop-piece">Bufanda Gris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-sep"></div>
+
+    <!-- Drop 001 -->
+    <div class="drop-entry">
+      <div class="drop-entry__ghost">001</div>
+      <div class="drop-entry__content">
+        <div class="drop-entry__top">
+          <div>
+            <p class="drop-entry__label">DROP 001</p>
+            <h2 class="drop-entry__name">ORIGEN</h2>
+          </div>
+          <div class="drop-entry__meta">
+            <p class="drop-entry__date">OCTUBRE 2024</p>
+            <p class="drop-entry__units">20 unidades — AGOTADO</p>
+          </div>
+        </div>
+        <div class="drop-entry__imgs">
+          <div class="ph drop-img drop-img--wide"></div>
+          <div class="ph drop-img"></div>
+          <div class="ph drop-img"></div>
+          <div class="ph drop-img"></div>
+        </div>
+        <div class="drop-entry__pieces">
+          <p class="drop-pieces__label">Piezas del drop</p>
+          <div class="drop-pieces__list">
+            <span class="drop-piece">Camiseta Origen</span>
+            <span class="drop-piece">Sudadera Nocturna</span>
+            <span class="drop-piece">Tote Bag #01</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Próximo drop teaser -->
+    <div class="next-drop">
+      <p class="next-drop__label">Próximamente</p>
+      <h2 class="next-drop__num">003</h2>
+      <p class="next-drop__name">NOCTURNO — Septiembre 2025</p>
+      <a href="tienda.html" class="btn btn--red">Ver drop actual</a>
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
