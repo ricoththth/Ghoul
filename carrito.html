@@ -12,7 +12,7 @@
   <nav class="nav">
     <a href="tienda.html" class="nav-back" style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--dark)">← GHOUL</a>
     <a href="index.html" class="nav__logo">GHOUL</a>
-    <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">CARRITO &nbsp; 1 ▪</div>
+    <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">CARRITO &nbsp; <span class="nav__cart-count">0</span> ▪</div>
   </nav>
 
   <main class="page cart-page">
@@ -38,7 +38,7 @@
         <!-- Contact info -->
         <div class="form-section">
           <h3 class="form-section__title">Información de contacto</h3>
-          <input type="email" class="input" placeholder="Correo electrónico">
+          <input type="email" id="email_envio" class="input" placeholder="Correo electrónico">
           <label class="checkbox-label">
             <input type="checkbox" checked> Suscribirme a actualizaciones y notificaciones
           </label>
@@ -50,39 +50,39 @@
           <div class="form-row">
             <div class="form-group">
               <label class="input-label">Nombre</label>
-              <input type="text" class="input">
+              <input type="text" id="nombre_envio" class="input">
             </div>
             <div class="form-group">
               <label class="input-label">Apellido</label>
-              <input type="text" class="input">
+              <input type="text" id="apellido_envio" class="input">
             </div>
           </div>
           <div class="form-group">
             <label class="input-label">Dirección</label>
-            <input type="text" class="input" placeholder="Empieza a escribir tu dirección...">
+            <input type="text" id="direccion_envio" class="input" placeholder="Empieza a escribir tu dirección...">
           </div>
           <div class="form-group">
             <label class="input-label">Apartamento, suite, etc. (opcional)</label>
-            <input type="text" class="input">
+            <input type="text" id="apartamento_envio" class="input">
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="input-label">Ciudad</label>
-              <input type="text" class="input">
+              <input type="text" id="ciudad" class="input">
             </div>
             <div class="form-group">
               <label class="input-label">País</label>
-              <input type="text" class="input" value="Colombia">
+              <input type="text" id="pais" class="input" value="Colombia">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="input-label">Departamento</label>
-              <input type="text" class="input">
+              <input type="text" id="departamento" class="input">
             </div>
             <div class="form-group">
               <label class="input-label">Código postal</label>
-              <input type="text" class="input">
+              <input type="text" id="codigo_postal" class="input">
             </div>
           </div>
         </div>
@@ -153,6 +153,6 @@
 
   </main>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

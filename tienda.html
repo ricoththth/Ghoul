@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -15,14 +15,13 @@
       <li><a href="lookbook.html">Lookbook</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="archivo.html">Archivo</a></li>
-      <li><a href="#">Contacto</a></li>
     </ul>
     <a href="index.html" class="nav__logo">GHOUL</a>
     <div class="nav__actions">
-      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <a href="#" class="auth-btn" style="display:flex;align-items:center;gap:4px;font-size:12px;text-decoration:none">Iniciar sesión</a>
       <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
         <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-        <span class="nav__cart-count">1</span>
+        <span class="nav__cart-count">0</span>
       </a>
     </div>
   </nav>
@@ -56,7 +55,7 @@
     <div class="product-grid">
 
       <a href="producto.html" class="product-card" data-cat="camisetas">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-01.jpg" alt="Camiseta Nocturno"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-001</p>
           <p class="product-card__name">Camiseta Nocturno</p>
@@ -65,7 +64,7 @@
       </a>
 
       <a href="producto.html" class="product-card" data-cat="camibuzos">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-03.jpg" alt="Hoodie Oversize"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-002</p>
           <p class="product-card__name">Hoodie Oversize</p>
@@ -74,7 +73,7 @@
       </a>
 
       <a href="producto.html" class="product-card" data-cat="tote-bags">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-02.jpg" alt="Tote Bag Drop 002"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-003</p>
           <p class="product-card__name">Tote Bag Drop 002</p>
@@ -92,7 +91,7 @@
       </a>
 
       <a href="producto.html" class="product-card" data-cat="camisetas">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-01.jpg" alt="Camiseta Fantasma"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-005</p>
           <p class="product-card__name">Camiseta Fantasma</p>
@@ -110,7 +109,7 @@
       </a>
 
       <a href="producto.html" class="product-card" data-cat="camibuzos">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-03.jpg" alt="Camibuzo Urban"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-007</p>
           <p class="product-card__name">Camibuzo Urban</p>
@@ -128,11 +127,20 @@
       </a>
 
       <a href="producto.html" class="product-card" data-cat="camisetas">
-        <div class="product-card__img ph"></div>
+        <div class="product-card__img"><img src="img/prod-01.jpg" alt="Camiseta Void"></div>
         <div class="product-card__info">
           <p class="product-card__sku">GH-009</p>
           <p class="product-card__name">Camiseta Void</p>
           <p class="product-card__price">$89.000 COP</p>
+        </div>
+      </a>
+
+      <a href="producto.html" class="product-card" data-cat="tote-bags">
+        <div class="product-card__img"><img src="img/prod-02.jpg" alt="Tote Bag Fantasma"></div>
+        <div class="product-card__info">
+          <p class="product-card__sku">GH-010</p>
+          <p class="product-card__name">Tote Bag Fantasma</p>
+          <p class="product-card__price">$65.000 COP</p>
         </div>
       </a>
 
@@ -161,7 +169,6 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="lookbook.html">Lookbook</a></li>
         <li><a href="archivo.html">Archivo</a></li>
-        <li><a href="#">Contacto</a></li>
       </ul>
     </div>
     <div class="footer__col">
@@ -179,6 +186,6 @@
     <p>Bogotá, Colombia — ghoul.com.co</p>
   </div>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

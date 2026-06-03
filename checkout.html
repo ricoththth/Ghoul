@@ -12,7 +12,10 @@
   <nav class="nav">
     <a href="carrito.html" style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--dark)">← Volver</a>
     <a href="index.html" class="nav__logo">GHOUL</a>
-    <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">FINALIZAR COMPRA</div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="#" class="auth-btn" style="font-size:11px;text-decoration:none;font-weight:500;letter-spacing:0.12em;text-transform:uppercase">Iniciar sesión</a>
+      <div style="font-family:var(--font-head);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid)">FINALIZAR COMPRA</div>
+    </div>
   </nav>
 
   <main class="page checkout-page">
@@ -158,7 +161,7 @@
 
   </main>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
   <script>
     // Payment tab switching
     document.querySelectorAll('.pay-tab').forEach(tab => {

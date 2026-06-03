@@ -12,10 +12,13 @@
   <nav class="nav nav--product">
     <a href="tienda.html" class="nav-back">← GHOUL</a>
     <a href="index.html" class="nav__logo">GHOUL</a>
-    <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-      <span class="nav__cart-count">1</span>
-    </a>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="#" class="auth-btn" style="font-size:12px;text-decoration:none">Iniciar sesión</a>
+      <a href="carrito.html" style="display:flex;align-items:center;gap:4px">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count">0</span>
+      </a>
+    </div>
   </nav>
 
   <main class="page pd-page">
@@ -24,15 +27,30 @@
 
       <!-- Thumbnail strip (left) -->
       <div class="pd-thumbs">
-        <div class="thumb-item active ph"></div>
-        <div class="thumb-item ph"></div>
-        <div class="thumb-item ph"></div>
-        <div class="thumb-item ph"></div>
-        <div class="thumb-item ph"></div>
+        <div class="thumb-item active" data-index="0">
+          <img src="img/prod-01.jpg" alt="Producto 1">
+        </div>
+        <div class="thumb-item" data-index="1">
+          <img src="img/prod-02.jpg" alt="Producto 2">
+        </div>
+        <div class="thumb-item" data-index="2">
+          <img src="img/prod-03.jpg" alt="Producto 3">
+        </div>
       </div>
 
-      <!-- Main image -->
-      <div class="pd-main-img ph">
+      <!-- Main image carousel -->
+      <div class="pd-gallery">
+        <div class="pd-slides">
+          <div class="pd-slide active">
+            <img src="img/prod-01.jpg" alt="Producto 1">
+          </div>
+          <div class="pd-slide">
+            <img src="img/prod-02.jpg" alt="Producto 2">
+          </div>
+          <div class="pd-slide">
+            <img src="img/prod-03.jpg" alt="Producto 3">
+          </div>
+        </div>
         <button class="pd-arrow pd-arrow--prev">←</button>
         <button class="pd-arrow pd-arrow--next">→</button>
       </div>
@@ -94,8 +112,6 @@
           <span class="dot dot--active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
         </div>
       </div>
 
@@ -103,6 +119,6 @@
 
   </main>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
