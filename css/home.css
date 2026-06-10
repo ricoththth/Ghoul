@@ -181,12 +181,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  align-items: start;
   margin-bottom: 40px;
 }
 .hg-card {
+  display: flex;
+  flex-direction: column;
+}
+.hg-card__link {
   display: block;
   text-decoration: none;
   color: inherit;
+  flex: 1;
 }
 .hg-card__img {
   width: 100%;
@@ -225,6 +231,7 @@
 .hg-card__add {
   font-size: 11px;
   letter-spacing: 0.14em;
+  cursor: pointer;
 }
 
 .ver-todos {
@@ -314,6 +321,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  align-items: start;
 }
 .bp-card {
   display: block;
@@ -324,6 +332,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   background: var(--ph);
+  height: auto;
   margin-bottom: 18px;
 }
 .bp-card__date {
