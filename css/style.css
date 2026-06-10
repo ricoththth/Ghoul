@@ -122,6 +122,17 @@ input, select { font-family: inherit; }
   gap: 20px;
 }
 .nav__actions svg { width: 18px; height: 18px; stroke: var(--dark); fill: none; stroke-width: 1.5; }
+.nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.nav__icon svg { width: 18px; height: 18px; stroke: var(--dark); fill: none; stroke-width: 1.5; }
 .nav__cart-count {
   font-family: var(--font-head);
   font-size: 11px;
